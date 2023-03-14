@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/shape_corner_up"
+    tools:context=".home_fragment.homeslide_01">
+
+    <LinearLayout
+        android:id="@+id/ll_slide01_1"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="21dp"
+            android:layout_height="19dp"
+            android:src="@drawable/calender"
+            android:layout_marginLeft="24dp"
+            android:layout_gravity="center_vertical"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="考试日历"
+            android:textSize="15sp"
+            android:textColor="#313234"
+            android:layout_marginLeft="4dp"
+            android:layout_gravity="center_vertical"/>
+        <ImageView
+            android:layout_width="8dp"
+            android:layout_height="14dp"
+            android:src="@drawable/arrow"
+            android:layout_marginLeft="226dp"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F0F0F0"/>
+
+    <LinearLayout
+        android:id="@+id/ll_slide01_2"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="21dp"
+            android:layout_height="19dp"
+            android:src="@drawable/result"
+            android:layout_marginLeft="24dp"
+            android:layout_gravity="center_vertical"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的成绩"
+            android:textSize="15sp"
+            android:textColor="#313234"
+            android:layout_marginLeft="4dp"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:layout_width="8dp"
+            android:layout_height="14dp"
+            android:src="@drawable/arrow"
+            android:layout_marginLeft="226dp"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F0F0F0"/>
+</LinearLayout>

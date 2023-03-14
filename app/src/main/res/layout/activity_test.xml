@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/ll_test"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:opencv="http://schemas.android.com/apk/res-auto"
+    android:background="#f0f0f0"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.TestActivity">
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="@drawable/shape_corner_down"/>
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="42dp"
+            android:src="@drawable/back_arrow"
+            android:layout_marginLeft="14dp"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:id="@+id/daojishi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:text="04：25"
+            android:layout_centerHorizontal="true"
+            android:textColor="#010101"
+            android:textStyle="bold"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="10dp"/>
+    </RelativeLayout>
+
+    <org.opencv.android.JavaCameraView
+        android:id="@+id/OpencvCameraView"
+        android:layout_below="@id/title"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        opencv:show_fps="true"
+        opencv:camera_id="any"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/test_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_corner_up"
+        android:layout_below="@id/title"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/q_up"
+        android:layout_width="73dp"
+        android:layout_height="36dp"
+        android:background="@drawable/shape_button_up"
+        android:layout_above="@+id/iv_datika"
+        android:layout_marginBottom="23dp"
+        android:layout_marginLeft="74dp"
+        android:text="上一题"
+        android:textStyle="bold"
+        android:textColor="#2E9FFD"
+        android:textSize="11sp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/q_down"
+        android:layout_width="73dp"
+        android:layout_height="36dp"
+        android:text="下一题"
+        android:gravity="center"
+        android:background="@drawable/shape_button_down"
+        android:layout_above="@+id/iv_datika"
+        android:layout_marginBottom="23dp"
+        android:layout_marginLeft="212dp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:textSize="11sp" />
+
+    <ImageView
+        android:id="@+id/iv_datika"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/datika"
+        android:layout_marginBottom="14dp"
+        android:layout_marginLeft="147dp"/>
+
+    <TextView
+        android:id="@+id/tv_datika"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="答题卡"
+        android:textStyle="bold"
+        android:textColor="#1481FF"
+        android:textSize="15sp"
+        android:layout_toRightOf="@id/iv_datika"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="11dp"
+        android:layout_marginLeft="5dp"/>
+
+</RelativeLayout>

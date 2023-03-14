@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.MessageFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="103dp"
+        android:background="@drawable/shape_corner_down">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="32dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="162dp"
+            android:layout_marginLeft="163dp"
+            android:layout_marginRight="162dp"
+            android:layout_marginStart="163dp"
+            android:text="消息"
+            android:textColor="#010101"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <View
+            android:id="@+id/search"
+            android:layout_width="329dp"
+            android:layout_height="29dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="26dp"
+            android:layout_below="@+id/textView"
+            android:background="@drawable/shape_corner"
+            android:layout_marginStart="16dp" />
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="300dp"
+            android:layout_height="29dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="26dp"
+            android:layout_below="@+id/textView"
+            android:background="@null"
+            android:layout_marginStart="36dp" />
+
+        <ImageView
+            android:id="@+id/searchView"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_below="@+id/textView"
+            android:layout_marginBottom="21dp"
+            android:layout_marginLeft="158dp"
+            android:layout_marginStart="158dp"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/search_gray"/>
+
+        <TextView
+            android:id="@+id/tv_search"
+            android:layout_width="29dp"
+            android:layout_height="19dp"
+            android:layout_below="@+id/textView"
+            android:layout_toRightOf="@id/searchView"
+            android:layout_marginTop="31dp"
+            android:layout_marginLeft="2dp"
+            android:text="@string/tv_search"
+            android:textColor="#000000"/>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_message"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_corner_up"/>
+
+</LinearLayout>
